@@ -31,7 +31,7 @@ Adicione os arquivos em [`public/cvs/`](public/cvs/) com os nomes listados em [`
 
 ## Deploy no GitHub Pages
 
-1. Faça push da branch `main`.
+1. Faça push da branch `master`.
 2. Em **Settings → Pages**, selecione a fonte **GitHub Actions**.
 3. O workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) faz lint, build e publish.
 
