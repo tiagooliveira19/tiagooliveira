@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Currículo de Tiago Oliveira: Backend Engineering, Tech Lead, Product Owner e Full Stack com 10 anos de experiência."
+    />
+    <meta name="theme-color" content="#1f5c45" />
+    <title>Tiago Oliveira — Backend Engineer & Tech Lead</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231f5c45'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%23f3f0e8'%3ETO%3C/text%3E%3C/svg%3E" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (error) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="#top">
+          <img
+            class="brand__avatar"
+            src="images/tiago-oliveira.jpg"
+            data-i18n-alt="hero.photoAlt"
+            alt="Retrato profissional de Tiago Oliveira sorrindo"
+            width="40"
+            height="40"
+          />
+          <span>Tiago Oliveira</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about" data-i18n="nav.about">Sobre</a>
+          <a href="#areas" data-i18n="nav.areas">Áreas</a>
+          <a href="#experience" data-i18n="nav.experience">Experiência</a>
+          <a href="#skills" data-i18n="nav.skills">Stack</a>
+          <a href="#downloads" data-i18n="nav.downloads">Currículos</a>
+          <a href="#contact" data-i18n="nav.contact">Contato</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="lang-btn" data-lang="pt" aria-pressed="true" data-i18n="lang.pt">PT</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" data-i18n="lang.en">EN</button>
+          <button
+            type="button"
+            class="icon-btn"
+            data-action="toggle-theme"
+            data-i18n-aria="theme.toggle"
+            aria-label="Alternar tema claro ou escuro"
+          >
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+            </svg>
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-name">
+        <div class="hero__inner">
+          <div class="hero__media">
+            <img
+              src="images/tiago-oliveira.jpg"
+              data-i18n-alt="hero.photoAlt"
+              alt="Retrato profissional de Tiago Oliveira sorrindo"
+              width="240"
+              height="240"
+            />
+          </div>
+          <div class="hero__content">
+            <p class="hero__kicker" data-i18n="hero.kicker">Backend · Tech Lead · Product</p>
+            <h1 id="hero-name" data-i18n="hero.name">Tiago Oliveira</h1>
+            <p class="hero__lead" data-i18n="hero.lead">
+              10 anos construindo sistemas escaláveis em fintech, healthtech e edtech — com foco em backend, arquitetura e liderança técnica.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn--primary" href="#downloads" data-i18n="hero.ctaCv">Baixar currículos</a>
+              <a class="btn btn--ghost" href="#contact" data-i18n="hero.ctaContact">Falar comigo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section__inner">
+          <h2 id="about-title" data-i18n="about.title">Sobre mim</h2>
+          <div class="about-copy">
+            <p data-i18n="about.p1"></p>
+            <p data-i18n="about.p2"></p>
+            <p data-i18n="about.p3"></p>
+            <p data-i18n="about.p4"></p>
+            <p data-i18n="about.p5"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="areas" aria-labelledby="areas-title">
+        <div class="section__inner">
+          <h2 id="areas-title" data-i18n="areas.title">Áreas de atuação</h2>
+          <p class="section__intro" data-i18n="areas.intro"></p>
+          <ul class="areas-list" data-i18n-list="areas"></ul>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section__inner">
+          <h2 id="experience-title" data-i18n="experience.title">Experiência</h2>
+          <p class="section__intro" data-i18n="experience.intro"></p>
+          <div class="timeline" data-i18n-list="experience"></div>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="section__inner">
+          <h2 id="skills-title" data-i18n="skills.title">Stack e competências</h2>
+          <p class="section__intro" data-i18n="skills.intro"></p>
+
+          <div class="skills-block">
+            <h3 class="skills-block__title" data-i18n="skills.stackTitle">Stack</h3>
+            <div class="skills-grid" data-i18n-list="skills.stack"></div>
+          </div>
+
+          <div class="skills-block">
+            <h3 class="skills-block__title" data-i18n="skills.competenciesTitle">Competências</h3>
+            <div class="skills-grid skills-grid--competencies" data-i18n-list="skills.competencies"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="downloads" aria-labelledby="downloads-title">
+        <div class="section__inner">
+          <h2 id="downloads-title" data-i18n="downloads.title">Currículos para download</h2>
+          <p class="section__intro" data-i18n="downloads.intro"></p>
+          <div class="downloads-list" data-i18n-list="downloads"></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="section__inner">
+          <h2 id="contact-title" data-i18n="contact.title">Contato</h2>
+          <p class="section__intro" data-i18n="contact.intro"></p>
+          <div class="contact-list">
+            <a
+              href="https://www.linkedin.com/in/otiagooliveira/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="contact.linkedin"
+              aria-label="LinkedIn"
+            >
+              <svg class="contact-list__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77A1.75 1.75 0 0 0 0 1.73v20.54C0 23.24.78 24 1.77 24h20.46c.98 0 1.77-.76 1.77-1.73V1.73C24 .76 23.21 0 22.23 0z" />
+              </svg>
+              <span class="contact-list__value">linkedin.com/in/otiagooliveira</span>
+            </a>
+            <a
+              href="https://github.com/tiagooliveira19"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-aria="contact.github"
+              aria-label="GitHub"
+            >
+              <svg class="contact-list__icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                <path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .3z" />
+              </svg>
+              <span class="contact-list__value">github.com/tiagooliveira19</span>
+            </a>
+            <a
+              href="mailto:tiagooliveira.work@hotmail.com"
+              data-i18n-aria="contact.email"
+              aria-label="E-mail"
+            >
+              <svg class="contact-list__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m4 7 8 6 8-6" />
+              </svg>
+              <span class="contact-list__value">tiagooliveira.work@hotmail.com</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p data-i18n="footer.rights">Tiago Oliveira — currículo e portfólio.</p>
+        <p>© <span id="year"></span></p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

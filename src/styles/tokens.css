@@ -1,0 +1,43 @@
+:root {
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3.5rem;
+  --space-2xl: 5.5rem;
+  --radius-sm: 0.25rem;
+  --max-width: 72rem;
+  --header-height: 4rem;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration: 220ms;
+}
+
+[data-theme="light"] {
+  --color-bg: #f3f0e8;
+  --color-bg-elevated: #faf8f3;
+  --color-surface: #ebe6da;
+  --color-text: #1a221c;
+  --color-text-muted: #4d5a50;
+  --color-border: #c9c2b0;
+  --color-accent: #1f5c45;
+  --color-accent-hover: #174836;
+  --color-accent-soft: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  --color-hero-overlay: color-mix(in srgb, #0f1a14 55%, transparent);
+  --shadow-soft: 0 18px 40px color-mix(in srgb, #1a221c 10%, transparent);
+}
+
+[data-theme="dark"] {
+  --color-bg: #0f1411;
+  --color-bg-elevated: #161c18;
+  --color-surface: #1c2420;
+  --color-text: #ece8df;
+  --color-text-muted: #a8b2aa;
+  --color-border: #2e3933;
+  --color-accent: #6fbf95;
+  --color-accent-hover: #8fd0ac;
+  --color-accent-soft: color-mix(in srgb, var(--color-accent) 16%, transparent);
+  --color-hero-overlay: color-mix(in srgb, #050806 62%, transparent);
+  --shadow-soft: 0 18px 40px color-mix(in srgb, #000 35%, transparent);
+}
