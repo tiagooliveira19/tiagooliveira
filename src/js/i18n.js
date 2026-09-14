@@ -93,27 +93,37 @@ export function applyTranslations(locale) {
     },
   );
 
-  renderListSection(
-    document.querySelector('[data-i18n-list="experience"]'),
-    dictionary.experience.items,
-    (item) => {
-      const article = document.createElement('article');
-      article.className = 'timeline__item';
+  const renderTimelineList = (listKey, items) => {
+    renderListSection(
+      document.querySelector(`[data-i18n-list="${listKey}"]`),
+      items,
+      (item) => {
+        const article = document.createElement('article');
+        article.className = 'timeline__item';
 
-      const meta = document.createElement('p');
-      meta.className = 'timeline__meta';
-      meta.textContent = item.meta;
+        const meta = document.createElement('p');
+        meta.className = 'timeline__meta';
+        meta.textContent = item.meta;
 
-      const title = document.createElement('h3');
-      title.textContent = item.title;
+        const title = document.createElement('h3');
+        title.textContent = item.title;
 
-      const descriptionNode = document.createElement('p');
-      descriptionNode.textContent = item.description;
+        article.append(meta, title);
 
-      article.append(meta, title, descriptionNode);
-      return article;
-    },
-  );
+        if (item.description) {
+          const descriptionNode = document.createElement('p');
+          descriptionNode.textContent = item.description;
+          article.append(descriptionNode);
+        }
+
+        return article;
+      },
+    );
+  };
+
+  renderTimelineList('experience', dictionary.experience.items);
+  renderTimelineList('education.academic', dictionary.education.academic);
+  renderTimelineList('education.certifications', dictionary.education.certifications);
 
   const renderSkillGroups = (listKey, groups) => {
     renderListSection(

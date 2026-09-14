@@ -338,6 +338,21 @@
   margin-top: 0;
 }
 
+.education-block {
+  margin-top: var(--space-xl);
+}
+
+.education-block:first-of-type {
+  margin-top: 0;
+}
+
+.education-block__title {
+  margin-bottom: var(--space-md);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
 .skills-block__title {
   margin-bottom: var(--space-md);
   font-family: var(--font-display);

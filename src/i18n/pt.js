@@ -8,6 +8,7 @@ export const pt = {
     about: "Sobre",
     areas: "Áreas",
     experience: "Experiência",
+    education: "Formação",
     skills: "Stack",
     downloads: "Currículos",
     contact: "Contato",
@@ -87,6 +88,31 @@ export const pt = {
       },
     ],
   },
+  education: {
+    title: "Formação e certificações",
+    intro: "Base acadêmica e certificações que complementam a atuação em engenharia, liderança e produto.",
+    academicTitle: "Formação acadêmica",
+    certificationsTitle: "Certificações",
+    academic: [
+      {
+        meta: "2020",
+        title: "MBA em Gerenciamento de Projetos",
+        description: "PUC Minas",
+      },
+      {
+        meta: "2018",
+        title: "Bacharelado em Sistemas de Informação",
+        description: "Centro de Ensino Superior de Juiz de Fora",
+      },
+    ],
+    certifications: [
+      {
+        meta: "CertiProf",
+        title: "Scrum Foundations Professional Certificate (SFPC)",
+        description: "",
+      },
+    ],
+  },
   skills: {
     title: "Stack e competências",
     intro: "Ferramentas que uso e capacidades que aplico no dia a dia.",
@@ -117,6 +143,10 @@ export const pt = {
         title: "Agile",
         items: ["Scrum", "Kanban"],
       },
+      {
+        title: "Testes",
+        items: ["Unitários", "Integração", "End-to-end"],
+      },
     ],
     competencies: [
       {
@@ -127,6 +157,7 @@ export const pt = {
           "Microsserviços / sistemas distribuídos",
           "Escalabilidade e performance",
           "Integrações",
+          "Testes unitários, de integração e end-to-end",
         ],
       },
       {
